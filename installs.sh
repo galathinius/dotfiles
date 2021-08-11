@@ -3,8 +3,8 @@
 
 apt-get update
 
-# install pip and git
-apt-get install -y python3-pip git power-calibrate numix-icon-theme-circle
+# install some packages
+apt-get install -y python3-pip git power-calibrate numix-icon-theme-circle numix-icon-theme
 
 
 # install gnome tweaks
