@@ -9,7 +9,7 @@ apt-get install -y python3-pip git power-calibrate numix-icon-theme-circle numix
 
 # install gnome tweaks
 add-apt-repository universe
-apt install gnome-tweak-tool
+apt install -y gnome-tweak-tool
 
 
 # install miniconda
@@ -27,7 +27,7 @@ snap install --classic code
 # install docker
 apt-get update
 
-apt-get install \
+apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -42,7 +42,7 @@ echo \
 
 apt-get update
 
-apt-get install docker-ce docker-ce-cli containerd.io
+apt-get install -y docker-ce docker-ce-cli containerd.io
 
 
 # intall docker-compose
