@@ -1,7 +1,7 @@
 #!/bin/bash
 ############################
 
-files="installs.sh links.sh bluetooth.sh"    # list of scripts to run
+files="installs.sh links.sh bluetooth_fix.sh"    # list of scripts to run
 
 chmod +x "$files"
 
