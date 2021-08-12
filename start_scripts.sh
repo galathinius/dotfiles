@@ -1,9 +1,7 @@
 #!/bin/bash
-############################
+############################ 
 
-files="installs.sh links.sh bluetooth_fix.sh"    # list of scripts to run
-
-chmod +x "$files"
+files="installs.sh bluetooth_fix.sh links.sh"    # list of scripts to run
 
 for file in $files; do
     echo "Running $file "

@@ -4,7 +4,7 @@
 apt-get update
 
 # install some packages
-apt-get install -y python3-pip git power-calibrate numix-icon-theme-circle numix-icon-theme
+apt-get install -y zsh python3-pip git power-calibrate numix-icon-theme-circle numix-icon-theme
 
 
 # install gnome tweaks
@@ -13,11 +13,17 @@ apt install -y gnome-tweak-tool
 
 
 # install miniconda
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget --directory-prefix=~ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
-chmod +x Miniconda3-latest-Linux-x86_64.sh
+chmod +x ~/Miniconda3-latest-Linux-x86_64.sh
 
 /bin/bash Miniconda3-latest-Linux-x86_64.sh
+# if zsh
+if [ "$SHELL" = /usr/bin/zsh ]
+then
+  /home/"$USER"/miniconda3/bin/conda init zsh
+fi
+
 
 
 # install vscode
@@ -50,3 +56,5 @@ curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compo
 
 chmod +x /usr/local/bin/docker-compose
 
+# install oh-my zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
