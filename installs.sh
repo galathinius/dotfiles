@@ -21,7 +21,9 @@ wget -P ~ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 chmod +x ~/Miniconda3-latest-Linux-x86_64.sh
 
-/bin/bash ~/Miniconda3-latest-Linux-x86_64.sh
+/bin/bash ~/Miniconda3-latest-Linux-x86_64.sh -b
+source ~/miniconda3/bin/activate
+conda init bash
 # if zsh
 if [ "$SHELL" = /usr/bin/zsh ]
 then
