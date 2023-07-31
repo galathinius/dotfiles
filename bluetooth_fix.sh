@@ -6,7 +6,7 @@
 echo "# This section contains general options
     [General]
     Enable=Source,Sink,Media,Socket
-" > /etc/bluetooth/audio.conf
+" >> /etc/bluetooth/audio.conf
 
 service bluetooth restart
 

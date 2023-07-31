@@ -4,20 +4,24 @@
 apt-get update
 
 # install some packages
-apt-get install -y zsh python3-pip git power-calibrate numix-icon-theme-circle numix-icon-theme
-
+apt-get install -y zsh python3-pip git power-calibrate numix-icon-theme-circle numix-icon-theme dbus-x11
 
 # install gnome tweaks
 add-apt-repository universe
-apt install -y gnome-tweak-tool
+apt install -y gnome-tweak
+
+git config --global user.name "galathinius"
+git config --global user.email "anisoara.ionela@gmail.com"
+
 
 
 # install miniconda
-wget --directory-prefix=~ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+# the long form of the flag --directory-prefix= creates ~ as a subfolder in the curent directory
+wget -P ~ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 chmod +x ~/Miniconda3-latest-Linux-x86_64.sh
 
-/bin/bash Miniconda3-latest-Linux-x86_64.sh
+/bin/bash ~/Miniconda3-latest-Linux-x86_64.sh
 # if zsh
 if [ "$SHELL" = /usr/bin/zsh ]
 then
