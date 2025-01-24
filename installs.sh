@@ -8,7 +8,7 @@ apt-get install -y zsh python3-pip git power-calibrate numix-icon-theme-circle n
 
 # install gnome tweaks
 add-apt-repository universe
-apt install -y gnome-tweak
+apt install -y gnome-tweaks
 
 git config --global user.name "galathinius"
 git config --global user.email "anisoara.ionela@gmail.com"
