@@ -10,6 +10,9 @@ apt-get install -y zsh python3-pip git power-calibrate numix-icon-theme-circle n
 add-apt-repository universe
 apt install -y gnome-tweaks
 
+# don't show trash icon on dock
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
+
 git config --global user.name "galathinius"
 git config --global user.email "anisoara.ionela@gmail.com"
 
