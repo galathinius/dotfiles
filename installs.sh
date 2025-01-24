@@ -4,7 +4,7 @@
 apt-get update
 
 # install some packages
-apt-get install -y zsh python3-pip git power-calibrate numix-icon-theme-circle numix-icon-theme dbus-x11
+apt-get install -y zsh python3-pip git power-calibrate numix-icon-theme-circle numix-icon-theme dbus-x11 curl
 
 # install gnome tweaks
 add-apt-repository universe
